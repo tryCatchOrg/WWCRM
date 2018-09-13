@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91470341-93C3-4507-A9A8-6EA64801F42C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WritersWeb.Forms</RootNamespace>
+    <AssemblyName>WritersWeb.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.Charts.Design, Version=14.1.0.32, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Charts.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.32, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.32, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="ISavable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Resources\DLL\ISavable.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectCloner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Resources\DLL\ObjectCloner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WorkingBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Resources\DLL\WorkingBase.dll</HintPath>
+    </Reference>
+    <Reference Include="WorkingListBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Resources\DLL\WorkingListBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Account.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\frmAddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddAdmin.designer.cs">
+      <DependentUpon>frmAddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddEmployee.designer.cs">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmAddLead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddLead.designer.cs">
+      <DependentUpon>frmAddLead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmAddMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAddMemo.designer.cs">
+      <DependentUpon>frmAddMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAdmin.designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEmployee.designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmFulfillment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmFulfillment.designer.cs">
+      <DependentUpon>frmFulfillment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLead.designer.cs">
+      <DependentUpon>frmLead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmMemo.designer.cs">
+      <DependentUpon>frmMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPayment.designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmProduction.designer.cs">
+      <DependentUpon>frmProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPurchase.designer.cs">
+      <DependentUpon>frmPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmReports.designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmSales.designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTrack.designer.cs">
+      <DependentUpon>frmTrack.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\frmAddAdmin.resx">
+      <DependentUpon>frmAddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAddLead.resx">
+      <DependentUpon>frmAddLead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAddMemo.resx">
+      <DependentUpon>frmAddMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmFulfillment.resx">
+      <DependentUpon>frmFulfillment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLead.resx">
+      <DependentUpon>frmLead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmMemo.resx">
+      <DependentUpon>frmMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmProduction.resx">
+      <DependentUpon>frmProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPurchase.resx">
+      <DependentUpon>frmPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmReports.resx">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTrack.resx">
+      <DependentUpon>frmTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WritersWeb.Base\WritersWeb.Base.csproj">
+      <Project>{f8e0c3ca-562c-4f0c-8d95-2ad4476353ac}</Project>
+      <Name>WritersWeb.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WritersWeb.Data\WritersWeb.Data.csproj">
+      <Project>{babf7a95-ffed-4c49-bb1e-308e2e1f55ac}</Project>
+      <Name>WritersWeb.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="_GlobalFunction\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
