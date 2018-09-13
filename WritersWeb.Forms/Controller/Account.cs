@@ -21,10 +21,10 @@ namespace WritersWeb.Controller
                 return 0;
         }
 
-        //public static Authenticates Result(Authenticates.CriteriaInfo criteriaInfo)
-        //{
-        //    Authenticates authenticate = Authenticates.GetData(criteriaInfo);
-        //    return authenticate;
-        //}
+        public static Authenticates Result(Authenticates.CriteriaInfo criteriaInfo)
+        {
+            Authenticates authenticate = Authenticates.GetData(criteriaInfo);
+            return authenticate;
+        }
     }
 }
