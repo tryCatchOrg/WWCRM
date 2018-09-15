@@ -13,7 +13,6 @@ namespace WritersWeb.Controller
         public static int AuthenticateUser(Authenticates.CriteriaInfo criteriaInfo)
         {
             Authenticates authenticate = Authenticates.GetData(criteriaInfo);
-            List<object> res = new List<object>((IEnumerable<object>)authenticate);
 
             if (authenticate.Count > 0)
                 return authenticate.Count;
@@ -21,10 +20,12 @@ namespace WritersWeb.Controller
                 return 0;
         }
 
-        public static Authenticates Result(Authenticates.CriteriaInfo criteriaInfo)
+        public static List<object> AuthResult(Authenticates.CriteriaInfo criteriaInfo)
         {
             Authenticates authenticate = Authenticates.GetData(criteriaInfo);
-            return authenticate;
+            List<object> res = new List<object>((IEnumerable<object>)authenticate);
+            return res;
         }
     }
 }
+    

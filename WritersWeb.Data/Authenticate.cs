@@ -13,8 +13,11 @@ namespace WritersWeb.Data
     public class Authenticate : WorkingBase<Authenticate>
     {
         #region Properties
-        
+
+        public string Username { get; set; }
+        public string Password { get; set; }
         public string Fullname { get; set; }
+        public string GroupRights { get; set; }
 
         #endregion
 
@@ -39,12 +42,15 @@ namespace WritersWeb.Data
         private void Fetch(Csla.Data.SafeDataReader dr)
         {
             //IdTest = dr.GetInt32("");       //  inside "" is from sp column returned
+            Username = dr.GetString("Username");
+            Password = dr.GetString("Password");
             Fullname = dr.GetString("Fullname");
+            GroupRights = dr.GetString("GroupRights");
 
             //Mark this data as persisted in the data store
             MarkOld();
 
-            UserProfile.SetProperties("", "", Fullname, "");
+            UserProfile.SetProperties(Username, Password, Fullname, GroupRights);
         }
 
         #endregion
