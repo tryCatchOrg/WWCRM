@@ -44,12 +44,12 @@ namespace WritersWeb.View
                 }
                 else
                 {
-                    MessageBox.Show("Invalid user!!!");
+                    MessageBox.Show("Invalid user.!!!");
                 }
             }
             else
             {
-                MessageBox.Show("Fields missing!!!");
+                MessageBox.Show("Fields missing.!!!");
             }       
         }
 
