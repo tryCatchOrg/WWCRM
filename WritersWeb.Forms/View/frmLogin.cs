@@ -32,13 +32,6 @@ namespace WritersWeb.View
                 authParams.Password = password;
                 if (Account.AuthenticateUser(authParams))
                 {
-                    Authenticate aut = new Authenticate();
-                    Object resObj = new Object();
-                    List<object> auth = new List<object>();
-                    auth = Account.AuthResult(authParams);
-                    //((WritersWeb.Data.Authenticate)new System.Collections.Generic.Mscorlib_CollectionDebugView<object>(auth).Items[0]).Fullname
-                    resObj = Account.AuthResult(authParams);
-
                     frmMain open = new frmMain();
                     open.ShowDialog();
                 }
