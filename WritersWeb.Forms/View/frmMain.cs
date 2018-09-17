@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WritersWeb.View;
 
+using WritersWeb.Base;
+
 namespace WritersWeb.View
 {
     public partial class frmMain : Form
@@ -17,8 +19,8 @@ namespace WritersWeb.View
         {
             InitializeComponent();
         }
-        
-        //frmDashboard dash;
+
+        frmDashboard dash;
         frmAdmin admin;
         frmEmployee employee;
         frmLead lead;
@@ -28,7 +30,7 @@ namespace WritersWeb.View
         frmSales sales;
         frmTrack track;
         frmMemo memo;
-        //frmSetting setting;
+        frmSetting setting;
         frmReports report;
 
 
@@ -51,6 +53,7 @@ namespace WritersWeb.View
             assign_btn(btnFulfillment);
             assign_btn(btnReports);
             assign_btn(btnSetting);
+            btnAccountInfo.Text = UserProfile.Fullname;
         }
 
         private void assign_btn(DevComponents.DotNetBar.ButtonX btn)
@@ -62,8 +65,8 @@ namespace WritersWeb.View
 
         private void closeFrms()
         {
-            if (lead != null) lead.pnlMain.Hide(); 
-            //if (dash != null) dash.pnlMain.Hide(); 
+            if (lead != null) lead.pnlMain.Hide();
+            if (dash != null) dash.pnlMain.Hide();
             if (admin != null) admin.pnlMain.Hide();
             if (employee != null) employee.pnlMain.Hide();
             if (fulfillment != null) fulfillment.pnlMain.Hide(); 
@@ -71,8 +74,8 @@ namespace WritersWeb.View
             if (purchased != null) purchased.pnlMain.Hide(); 
             if (sales != null) sales.pnlMain.Hide(); 
             if (track != null) track.pnlMain.Hide(); 
-            if (memo != null) memo.pnlMain.Hide(); 
-            //if (setting != null) setting.pnlMain.Hide(); 
+            if (memo != null) memo.pnlMain.Hide();
+            if (setting != null) setting.pnlMain.Hide();
             if (report != null) report.pnlMain.Hide();
         }
 
@@ -99,14 +102,15 @@ namespace WritersWeb.View
                 closeFrms();
                 lblCrump.Text = "Dashboard";
                 lblSymbol.Symbol = "";
-                //if (dash != null) {
-                //    dash.pnlMain.Show();
-                //} 
-                //else
-                //{
-                //    dash = new frmDashboard();
-                //    dash.pnlMain.Parent = this.mainWrap;
-                //}
+                if (dash != null)
+                {
+                    dash.pnlMain.Show();
+                }
+                else
+                {
+                    dash = new frmDashboard();
+                    dash.pnlMain.Parent = this.mainWrap;
+                }
             }
             else if (n == "btnAdmin")
             {
@@ -233,15 +237,15 @@ namespace WritersWeb.View
                 closeFrms();
                 lblCrump.Text = "Settings";
                 lblSymbol.Symbol = "";
-                //if (setting != null)
-                //{
-                //    setting.pnlMain.Show();
-                //}
-                //else
-                //{
-                //    setting = new frmSetting();
-                //    setting.pnlMain.Parent = this.mainWrap;
-                //}
+                if (setting != null)
+                {
+                    setting.pnlMain.Show();
+                }
+                else
+                {
+                    setting = new frmSetting();
+                    setting.pnlMain.Parent = this.mainWrap;
+                }
             }
             else if (n == "btnReports")
             {

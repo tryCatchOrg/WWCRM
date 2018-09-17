@@ -36,7 +36,7 @@
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx5 = new DevComponents.DotNetBar.PanelEx();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.btnAccountInfo = new DevComponents.DotNetBar.ButtonX();
             this.buttonItem4 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.lblLogout = new DevComponents.DotNetBar.LabelX();
@@ -196,7 +196,7 @@
             // 
             this.panelEx5.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx5.Controls.Add(this.buttonX2);
+            this.panelEx5.Controls.Add(this.btnAccountInfo);
             this.panelEx5.Controls.Add(this.lblLogout);
             this.panelEx5.Controls.Add(this.labelX10);
             this.panelEx5.DisabledBackColor = System.Drawing.Color.Empty;
@@ -212,29 +212,29 @@
             this.panelEx5.Style.GradientAngle = 90;
             this.panelEx5.TabIndex = 21;
             // 
-            // buttonX2
+            // btnAccountInfo
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.AutoExpandOnClick = true;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
-            this.buttonX2.FadeEffect = false;
-            this.buttonX2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonX2.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
-            this.buttonX2.Location = new System.Drawing.Point(46, 4);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(167, 39);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX2.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnAccountInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnAccountInfo.AutoExpandOnClick = true;
+            this.btnAccountInfo.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat;
+            this.btnAccountInfo.FadeEffect = false;
+            this.btnAccountInfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountInfo.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.None;
+            this.btnAccountInfo.Location = new System.Drawing.Point(46, 4);
+            this.btnAccountInfo.Name = "btnAccountInfo";
+            this.btnAccountInfo.Size = new System.Drawing.Size(167, 39);
+            this.btnAccountInfo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnAccountInfo.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.buttonItem4,
             this.buttonItem1});
-            this.buttonX2.SubItemsExpandWidth = 15;
-            this.buttonX2.SymbolColor = System.Drawing.Color.Gainsboro;
-            this.buttonX2.SymbolSize = 12F;
-            this.buttonX2.TabIndex = 25;
-            this.buttonX2.TabStop = false;
-            this.buttonX2.Text = "Joe John Ferrolino";
-            this.buttonX2.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
-            this.buttonX2.TextColor = System.Drawing.Color.Black;
+            this.btnAccountInfo.SubItemsExpandWidth = 15;
+            this.btnAccountInfo.SymbolColor = System.Drawing.Color.Gainsboro;
+            this.btnAccountInfo.SymbolSize = 12F;
+            this.btnAccountInfo.TabIndex = 25;
+            this.btnAccountInfo.TabStop = false;
+            this.btnAccountInfo.Text = "Joe John Ferrolino";
+            this.btnAccountInfo.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.btnAccountInfo.TextColor = System.Drawing.Color.Black;
             // 
             // buttonItem4
             // 
@@ -709,7 +709,7 @@
         private DevComponents.DotNetBar.PanelEx panelEx5;
         private DevComponents.DotNetBar.LabelX lblLogout;
         private DevComponents.DotNetBar.LabelX labelX10;
-        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX btnAccountInfo;
         private DevComponents.DotNetBar.ButtonItem buttonItem4;
         private DevComponents.DotNetBar.ButtonItem buttonItem1;
         private System.Windows.Forms.Panel panel2;

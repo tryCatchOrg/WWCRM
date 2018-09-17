@@ -30,7 +30,7 @@ namespace WritersWeb.View
             {
                 authParams.Username = username;
                 authParams.Password = password;
-                if (Account.AuthenticateUser(authParams) > 0)
+                if (Account.AuthenticateUser(authParams))
                 {
                     Authenticate aut = new Authenticate();
                     Object resObj = new Object();
@@ -41,6 +41,10 @@ namespace WritersWeb.View
 
                     frmMain open = new frmMain();
                     open.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid user!!!");
                 }
             }
             else

@@ -10,14 +10,14 @@ namespace WritersWeb.Controller
 {
     class Account
     {
-        public static int AuthenticateUser(Authenticates.CriteriaInfo criteriaInfo)
+        public static bool AuthenticateUser(Authenticates.CriteriaInfo criteriaInfo)
         {
             Authenticates authenticate = Authenticates.GetData(criteriaInfo);
 
             if (authenticate.Count > 0)
-                return authenticate.Count;
+                return true;
             else
-                return 0;
+                return false;
         }
 
         public static List<object> AuthResult(Authenticates.CriteriaInfo criteriaInfo)
